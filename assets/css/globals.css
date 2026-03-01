@@ -1,1 +1,167 @@
-/* Estilos css aqui! */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;        
+    height: 7%;        
+    padding-inline: 5%;
+    background-color: rgb(114, 1, 125);
+}
+.logoEnome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    gap: 15px;             
+}
+.perfil{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nomeFoto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+.fotopequena{
+    border-radius: 100%;
+}
+.pesquisa{
+    display:block;
+}
+.carrinhoLink{
+    height: 30px;
+}
+h1#TituloCatalogo{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+.persquisar button,a{
+    background-color: transparent;
+    color: rgb(255, 0, 255);
+    padding: 2px 10px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-style: oblique;
+    border-radius: 5px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 0, 53);
+    padding-bottom: 10%;
+}
+.carrinho{
+    position: fixed;
+    top: 10%;
+    right: 0;
+    padding-left: 2%;
+    padding-right: 7%;
+    border: 2px solid rgb(95, 0, 95);
+    border-radius: 10px;
+    width: fit-content;
+    margin: 30px;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: rgb(95, 0, 95);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+button#fecharCarrinho{
+    background-color: transparent;
+    border: transparent;
+    color: wheat;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-style: oblique;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+#listaProdutos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+li{
+    list-style: none;
+    gap:10px;
+}
+li button{
+    color: wheat;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-style: oblique;
+    border: transparent;
+}
+.itens{
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.fotoDino{
+    border-radius: 15%;
+}
+.Dino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(95, 0, 95);
+    border-radius: 10px;
+    padding: 10px;
+}
+.Dino p{
+    font-size: 15px;
+    font-weight: bold;
+    color:  rgb(255, 0, 255);
+}
+p,h1,h2,ul{
+    text-decoration: none;
+    color: rgb(245, 58, 245);
+    line-break: normal;
+    font-family: 'Arial', sans-serif;
+}
+a{
+    text-decoration: none;
+    border: 2px solid wheat;
+    color: wheat;
+    line-break: normal;
+    font-family: 'Arial', sans-serif;
+}
+button{
+    background-color: transparent;
+    border: 2px solid wheat;
+    color: wheat;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-style: oblique;
+    border-radius: 5px;
+}
+input{
+    padding: 5px;
+    background-color: wheat;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-style: oblique;
+}
+.caixaLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid rgb(95, 0, 95);
+    border-radius: 10px;
+    background-color: rgb(95, 0, 95);
+    width: 300px;
+    margin: 100px auto; }
