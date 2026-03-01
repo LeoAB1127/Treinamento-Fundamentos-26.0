@@ -2,42 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="assets/css/globals.css">
-        <title>DinoStore</title>
+        <title>DinoStore - Login</title>
     </head>
     <body>
         <header class="header">
-            <div>
-                <div class="logoEnome">
-                    <img class="fotopequena" src="assets/imgs/powerful-t-rex-logo-jurassic-period-concept-icon-illustration-design-vector.jpg" alt="logo do site" width="50">
-                    <h2>DinoStore</h2>
-                </div>
-                <div class="perfil">
-                    <div class="nomeFoto">
-                    <img class = "fotopequena" src="assets/imgs/fotoperfil.jpg" alt="foto de perfil" width="30">
-                    <p>Usuário</p>
-                    </div>
-                    <button onclick="logout()">Sair</button>
-                </div>
-            </div>
-            <div id="menus">
-                <div class="pesquisa">
-                    <input>
-                    <button type="button">Pesquisar</button>
-                </div>
-                <div class="carrinhoButton" id="carrinhoButton">
-                    <button>Carrinho</button>
-                </div>
-                <div class="carrinho" id="subaba">
-                <h2>Carrinho</h2>
-                <button id="fecharCarrinho">Fechar</button>
-                <p id="totalCarrinho">Total: R$ 0,00</p>
-                <ul id="listacarrinho"></ul>
-            </div>
+            <div class="logoEnome">
+                <img class="fotopequena" src="assets/imgs/powerful-t-rex-logo-jurassic-period-concept-icon-illustration-design-vector.jpg" alt="logo do site" width="50">
+                <h2>DinoStore</h2>
             </div>
         </header>
-        <div class="Catalogo">
-            <h1 id="TituloCatalogo">Catálogo</h1>
-            <div id="listaProdutos"></div>
-            <script src="assets/js/index.js"></script>
-    </body>
+        <div class="caixaLogin">
+            <h1>Login</h1>
+            <form id="inputsLogin">
+                <p for="usuario">Usuário:</p>
+                <input type="text" id="usuarioInput" name="usuario" required>
+                <p for="senha">Senha:</p>
+                <input type="password" id="senhaInput" name="senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+<script src="assets/js/index.js" ></script>
 </html>
